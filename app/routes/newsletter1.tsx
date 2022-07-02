@@ -1,5 +1,5 @@
 import type { LoaderFunction } from '@remix-run/node'
-import compileMjml from '../utils/newsletter.server'
+import compileMjml from '../utils/mjml.server'
 
 export const loader: LoaderFunction = async () => {
   const code = compileMjml(`
